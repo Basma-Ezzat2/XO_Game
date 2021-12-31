@@ -66,6 +66,7 @@ public class XOGame extends javax.swing.JFrame {
         jLabel13 = new javax.swing.JLabel();
         jButton15 = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
         Winner_video = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
@@ -478,6 +479,8 @@ public class XOGame extends javax.swing.JFrame {
         jButton16.setFont(new java.awt.Font("Tempus Sans ITC", 1, 14)); // NOI18N
         jButton16.setText("EXIT");
 
+        jButton20.setText("Recor");
+
         javax.swing.GroupLayout single_modeLayout = new javax.swing.GroupLayout(single_mode);
         single_mode.setLayout(single_modeLayout);
         single_modeLayout.setHorizontalGroup(
@@ -526,7 +529,9 @@ public class XOGame extends javax.swing.JFrame {
                 .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 101, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel10)
-                .addGap(89, 89, 89))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jButton20)
+                .addGap(6, 6, 6))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, single_modeLayout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jButton15)
@@ -543,7 +548,9 @@ public class XOGame extends javax.swing.JFrame {
                         .addComponent(jLabel10))
                     .addGroup(single_modeLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel12)))
+                        .addGroup(single_modeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton20)
+                            .addComponent(jLabel12))))
                 .addGap(32, 32, 32)
                 .addGroup(single_modeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel8)
@@ -885,6 +892,7 @@ public class XOGame extends javax.swing.JFrame {
     private javax.swing.JButton jButton18;
     private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
