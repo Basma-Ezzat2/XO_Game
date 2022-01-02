@@ -34,6 +34,7 @@ public class Loser extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -60,6 +61,8 @@ public class Loser extends javax.swing.JFrame {
 
         jLabel3.setText("jLabel3");
 
+        jButton1.setText("jButton1");
+
         javax.swing.GroupLayout loser_videoLayout = new javax.swing.GroupLayout(loser_video);
         loser_video.setLayout(loser_videoLayout);
         loser_videoLayout.setHorizontalGroup(
@@ -78,14 +81,19 @@ public class Loser extends javax.swing.JFrame {
                         .addGap(245, 245, 245))))
             .addGroup(loser_videoLayout.createSequentialGroup()
                 .addGroup(loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(loser_videoLayout.createSequentialGroup()
-                        .addGap(289, 289, 289)
-                        .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loser_videoLayout.createSequentialGroup()
                         .addContainerGap()
                         .addComponent(jLabel3)
-                        .addGap(73, 73, 73)))
+                        .addGap(73, 73, 73))
+                    .addGroup(loser_videoLayout.createSequentialGroup()
+                        .addGroup(loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(loser_videoLayout.createSequentialGroup()
+                                .addGap(289, 289, 289)
+                                .addComponent(jLabel2))
+                            .addGroup(loser_videoLayout.createSequentialGroup()
+                                .addGap(447, 447, 447)
+                                .addComponent(jButton1)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -94,20 +102,25 @@ public class Loser extends javax.swing.JFrame {
             .addGroup(loser_videoLayout.createSequentialGroup()
                 .addGroup(loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(loser_videoLayout.createSequentialGroup()
-                        .addGap(34, 34, 34)
-                        .addComponent(jLabel18))
+                        .addGroup(loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(loser_videoLayout.createSequentialGroup()
+                                .addGap(34, 34, 34)
+                                .addComponent(jLabel18))
+                            .addGroup(loser_videoLayout.createSequentialGroup()
+                                .addGap(42, 42, 42)
+                                .addComponent(jLabel15)))
+                        .addGroup(loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(loser_videoLayout.createSequentialGroup()
+                                .addGap(28, 28, 28)
+                                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(loser_videoLayout.createSequentialGroup()
+                                .addGap(70, 70, 70)
+                                .addComponent(jLabel3)
+                                .addGap(31, 31, 31)
+                                .addComponent(jLabel2))))
                     .addGroup(loser_videoLayout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel15)))
-                .addGroup(loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(loser_videoLayout.createSequentialGroup()
-                        .addGap(28, 28, 28)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(loser_videoLayout.createSequentialGroup()
-                        .addGap(70, 70, 70)
-                        .addComponent(jLabel3)
-                        .addGap(31, 31, 31)
-                        .addComponent(jLabel2)))
+                        .addGap(178, 178, 178)
+                        .addComponent(jButton1)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
@@ -117,7 +130,7 @@ public class Loser extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(loser_video, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
+            .addComponent(loser_video, javax.swing.GroupLayout.DEFAULT_SIZE, 876, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -163,6 +176,7 @@ public class Loser extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton19;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
