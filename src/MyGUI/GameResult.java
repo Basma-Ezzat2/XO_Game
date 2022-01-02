@@ -36,7 +36,6 @@ public class GameResult extends javax.swing.JFrame {
         jButton35 = new javax.swing.JButton();
         jButton36 = new javax.swing.JButton();
         jButton37 = new javax.swing.JButton();
-        jToggleButton1 = new javax.swing.JToggleButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setPreferredSize(new java.awt.Dimension(762, 496));
@@ -86,8 +85,6 @@ public class GameResult extends javax.swing.JFrame {
         jButton37.setFont(new java.awt.Font("Tempus Sans ITC", 1, 14)); // NOI18N
         jButton37.setForeground(new java.awt.Color(51, 51, 51));
 
-        jToggleButton1.setText("jToggleButton1");
-
         javax.swing.GroupLayout Game_ResultLayout = new javax.swing.GroupLayout(Game_Result);
         Game_Result.setLayout(Game_ResultLayout);
         Game_ResultLayout.setHorizontalGroup(
@@ -113,10 +110,7 @@ public class GameResult extends javax.swing.JFrame {
                         .addComponent(jLabel28, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(Game_ResultLayout.createSequentialGroup()
                         .addGap(151, 151, 151)
-                        .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(Game_ResultLayout.createSequentialGroup()
-                        .addGap(312, 312, 312)
-                        .addComponent(jToggleButton1)))
+                        .addComponent(jButton31, javax.swing.GroupLayout.PREFERRED_SIZE, 451, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         Game_ResultLayout.setVerticalGroup(
@@ -138,9 +132,7 @@ public class GameResult extends javax.swing.JFrame {
                             .addComponent(jButton32, javax.swing.GroupLayout.DEFAULT_SIZE, 111, Short.MAX_VALUE)
                             .addComponent(jButton36, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addComponent(jButton37, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(40, 40, 40)
-                .addComponent(jToggleButton1)
-                .addGap(38, 38, 38))
+                .addGap(101, 101, 101))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -212,6 +204,5 @@ public class GameResult extends javax.swing.JFrame {
     private javax.swing.JButton jButton36;
     private javax.swing.JButton jButton37;
     private javax.swing.JLabel jLabel28;
-    private javax.swing.JToggleButton jToggleButton1;
     // End of variables declaration//GEN-END:variables
 }
