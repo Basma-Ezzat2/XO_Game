@@ -5,18 +5,57 @@
  */
 package MyGUI;
 
+import java.awt.BorderLayout;
+import java.io.File;
+import javafx.application.Platform;
+import javafx.embed.swing.JFXPanel;
+import javafx.scene.Group;
+import javafx.scene.Scene;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
+import javafx.scene.media.MediaView;
+
+
 /**
  *
  * @author user
  */
 public class Winner extends javax.swing.JFrame {
+    private final JFXPanel jfxPanel= new JFXPanel();
 
     /**
      * Creates new form Winner
      */
     public Winner() {
         initComponents();
+        createScene();
+        setTitle("winner");
+        
+        setResizable(false);
+        setLocationRelativeTo(null);
+        
+        jPanel1.setLayout(new BorderLayout());
+        jPanel1.add(jfxPanel,BorderLayout.CENTER);
+        this.setLocationRelativeTo(null);
+        
     }
+    private void createScene(){
+        Platform.runLater(new Runnable(){
+            public void run (){
+                File file=new File("C:\\Users\\3BOOD\\Documents\\GitHub\\XO_Game\\src\\winner.mp4");
+                MediaPlayer oracleVid =new MediaPlayer(new Media(file.toURI().toString()));
+                
+                jfxPanel.setScene(new Scene (new Group(new MediaView(oracleVid))));
+                oracleVid.setVolume(0.7);
+                oracleVid.setCycleCount(MediaPlayer.INDEFINITE);
+                oracleVid.play();
+            }
+        });
+    
+    
+    
+    }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -31,6 +70,7 @@ public class Winner extends javax.swing.JFrame {
         jLabel17 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
         jButton17 = new javax.swing.JButton();
+        jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -49,31 +89,48 @@ public class Winner extends javax.swing.JFrame {
         jButton17.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
         jButton17.setText("Play again");
 
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 285, Short.MAX_VALUE)
+        );
+
         javax.swing.GroupLayout Winner_videoLayout = new javax.swing.GroupLayout(Winner_video);
         Winner_video.setLayout(Winner_videoLayout);
         Winner_videoLayout.setHorizontalGroup(
             Winner_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Winner_videoLayout.createSequentialGroup()
-                .addGroup(Winner_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(Winner_videoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(Winner_videoLayout.createSequentialGroup()
+                .addGroup(Winner_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Winner_videoLayout.createSequentialGroup()
                         .addGap(295, 295, 295)
                         .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(Winner_videoLayout.createSequentialGroup()
-                        .addGap(175, 175, 175)
-                        .addComponent(jLabel14)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, Winner_videoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel17, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(93, 93, 93)
+                        .addGroup(Winner_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel14)
+                            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(202, Short.MAX_VALUE))
         );
         Winner_videoLayout.setVerticalGroup(
             Winner_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Winner_videoLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(jLabel17)
-                .addGap(4, 4, 4)
-                .addComponent(jLabel14)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 297, Short.MAX_VALUE)
+                .addGroup(Winner_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(Winner_videoLayout.createSequentialGroup()
+                        .addGap(20, 20, 20)
+                        .addComponent(jLabel17))
+                    .addGroup(Winner_videoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel14)))
+                .addGap(44, 44, 44)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(27, 27, 27))
         );
@@ -124,7 +181,7 @@ public class Winner extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
+       java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new Winner().setVisible(true);
             }
@@ -136,5 +193,6 @@ public class Winner extends javax.swing.JFrame {
     private javax.swing.JButton jButton17;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JPanel jPanel1;
     // End of variables declaration//GEN-END:variables
 }
