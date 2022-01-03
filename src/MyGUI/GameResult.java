@@ -66,6 +66,11 @@ public class GameResult extends javax.swing.JFrame {
         jButton34.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
         jButton34.setForeground(new java.awt.Color(255, 204, 51));
         jButton34.setText("Game Won");
+        jButton34.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton34ActionPerformed(evt);
+            }
+        });
 
         jLabel28.setBackground(new java.awt.Color(255, 255, 255));
         jLabel28.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
@@ -158,6 +163,10 @@ public class GameResult extends javax.swing.JFrame {
     private void jButton33ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton33ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton33ActionPerformed
+
+    private void jButton34ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton34ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton34ActionPerformed
 
     /**
      * @param args the command line arguments

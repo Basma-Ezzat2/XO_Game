@@ -5,25 +5,299 @@
  */
 package MyGUI;
 
+import java.awt.Color;
+import java.awt.Component;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author user
  */
 public class twoPlayersMode extends javax.swing.JFrame {
 
-    /**
-     * Creates new form twoPlayersMode
-     */
+    
+    private String startGame="X";
+    private int xCount = 0;
+    private int oCount = 0;
+    boolean cheaker;
     public twoPlayersMode() {
         initComponents();
     }
-
+     private void gameScore()
+     {
+         playerX.setText(String.valueOf(xCount));
+         playerO.setText(String.valueOf(oCount));
+     }
+       private void choose_a_Player()
+     {
+          if(startGame.equalsIgnoreCase("X"))
+          {
+              startGame = "O";
+          }
+          else
+          { 
+              startGame = "X";
+          }    
+     }
+        private void winningGame()
+     {
+         String b1 = btn1.getText();
+         String b2 = btn2.getText();
+         String b3 = btn3.getText();
+         String b4 = btn4.getText();
+         String b5 = btn5.getText();
+         String b6 = btn6.getText();
+         String b7 = btn7.getText();
+         String b8 = btn8.getText();
+         String b9 = btn9.getText();
+         if (b1 ==("X")  && b2 ==("X")  && b3 ==("X"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn1.setBackground(color.green);
+              btn2.setBackground(color.green);
+              btn3.setBackground(color.green);
+              xCount++;
+              gameScore();
+            
+         
+         }
+         
+           if (b4 ==("X")  && b5 ==("X")  && b6 ==("X"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.cyan);
+              btn5.setBackground(color.cyan);
+              btn6.setBackground(color.cyan);
+              xCount++;
+              gameScore();
+            
+         
+         }
+           
+             if (b7 ==("X")  && b8 ==("X")  && b9 ==("X"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn7.setBackground(color.Orange);
+              btn8.setBackground(color.Orange);
+              btn9.setBackground(color.Orange);
+              xCount++;
+              gameScore();
+            
+         
+         }
+             
+               if (b4 ==("X")  && b5 ==("X")  && b6 ==("X"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.cyan);
+              btn5.setBackground(color.cyan);
+              btn6.setBackground(color.cyan);
+              xCount++;
+              gameScore();
+            
+         
+         }
+            if (b1 ==("X")  && b4 ==("X")  && b7 ==("X"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.MAGENTA);
+              btn5.setBackground(color.MAGENTA);
+              btn6.setBackground(color.MAGENTA);
+              xCount++;
+              gameScore();
+            
+         
+         } 
+                   
+           if (b2 ==("X")  && b5 ==("X")  && b8 ==("X"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.red);
+              btn5.setBackground(color.red);
+              btn6.setBackground(color.red);
+              xCount++;
+              gameScore();
+            
+         
+         }     
+           
+           
+             if (b3 ==("X")  && b6 ==("X")  && b9 ==("X"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.red);
+              btn5.setBackground(color.red);
+              btn6.setBackground(color.red);
+              xCount++;
+              gameScore();
+            
+         
+         }  
+             
+               if (b1 ==("X")  && b5 ==("X")  && b9 ==("X"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.blue);
+              btn5.setBackground(color.blue);
+              btn6.setBackground(color.blue);
+              xCount++;
+              gameScore();
+            
+         
+         }  
+               
+           if (b3 ==("X")  && b5 ==("X")  && b7==("X"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.Pink);
+              btn5.setBackground(color.Pink);
+              btn6.setBackground(color.Pink);
+              xCount++;
+              gameScore();
+            
+         
+         }  
+           
+                    if (b1 ==("O")  && b2 ==("O")  && b3 ==("O"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn1.setBackground(color.green);
+              btn2.setBackground(color.green);
+              btn3.setBackground(color.green);
+              oCount++;
+              gameScore();
+            
+         
+         }
+         
+           if (b4 ==("O")  && b5 ==("O")  && b6 ==("O"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.cyan);
+              btn5.setBackground(color.cyan);
+              btn6.setBackground(color.cyan);
+              oCount++;
+              gameScore();
+            
+         
+         }
+           
+             if (b7 ==("O")  && b8 ==("O")  && b9 ==("O"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn7.setBackground(color.Orange);
+              btn8.setBackground(color.Orange);
+              btn9.setBackground(color.Orange);
+              oCount++;
+              gameScore();
+            
+         
+         }
+             
+               if (b4 ==("O")  && b5 ==("O")  && b6 ==("O"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.cyan);
+              btn5.setBackground(color.cyan);
+              btn6.setBackground(color.cyan);
+              oCount++;
+              gameScore();
+            
+         
+         }
+            if (b1 ==("O")  && b4 ==("O")  && b7 ==("O"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.MAGENTA);
+              btn5.setBackground(color.MAGENTA);
+              btn6.setBackground(color.MAGENTA);
+              oCount++;
+              gameScore();
+            
+         
+         } 
+                   
+           if (b2 ==("O")  && b5 ==("O")  && b8 ==("O"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.red);
+              btn5.setBackground(color.red);
+              btn6.setBackground(color.red);
+              oCount++;
+              gameScore();
+            
+         
+         }     
+           
+           
+             if (b3 ==("O")  && b6 ==("O")  && b9 ==("O"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.red);
+              btn5.setBackground(color.red);
+              btn6.setBackground(color.red);
+              oCount++;
+              gameScore();
+            
+         
+         }  
+             
+               if (b1 ==("O")  && b5 ==("O")  && b9 ==("O"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.blue);
+              btn5.setBackground(color.blue);
+              btn6.setBackground(color.blue);
+              oCount++;
+              gameScore();
+            
+         
+         }  
+               
+           if (b3 ==("O")  && b5 ==("O")  && b7==("O"))
+         {
+             Component twoPlayersMode;
+            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
+              btn4.setBackground(color.Pink);
+              btn5.setBackground(color.Pink);
+              btn6.setBackground(color.Pink);
+              oCount++;
+              gameScore();
+            
+         
+         } 
+              
+      
+       
+         
+         
+         
+     }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
      * regenerated by the Form Editor.
      */
     @SuppressWarnings("unchecked")
+    
+    
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
@@ -33,20 +307,20 @@ public class twoPlayersMode extends javax.swing.JFrame {
         jPanel2 = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jButton30 = new javax.swing.JButton();
-        jButton29 = new javax.swing.JButton();
+        playerX = new javax.swing.JLabel();
+        playerO = new javax.swing.JLabel();
+        btnExit = new javax.swing.JButton();
+        btnReset = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
-        jButton21 = new javax.swing.JButton();
-        jButton26 = new javax.swing.JButton();
-        jButton22 = new javax.swing.JButton();
-        jButton20 = new javax.swing.JButton();
-        jButton23 = new javax.swing.JButton();
-        jButton25 = new javax.swing.JButton();
-        jButton27 = new javax.swing.JButton();
-        jButton28 = new javax.swing.JButton();
-        jButton24 = new javax.swing.JButton();
+        btn9 = new javax.swing.JButton();
+        btn1 = new javax.swing.JButton();
+        btn5 = new javax.swing.JButton();
+        btn2 = new javax.swing.JButton();
+        btn6 = new javax.swing.JButton();
+        btn3 = new javax.swing.JButton();
+        btn8 = new javax.swing.JButton();
+        btn7 = new javax.swing.JButton();
+        btn4 = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -74,19 +348,29 @@ public class twoPlayersMode extends javax.swing.JFrame {
         jLabel25.setForeground(new java.awt.Color(255, 102, 102));
         jLabel25.setText("You O");
 
-        jLabel24.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
-        jLabel24.setOpaque(true);
+        playerX.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        playerX.setOpaque(true);
 
-        jLabel26.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
-        jLabel26.setOpaque(true);
+        playerO.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        playerO.setOpaque(true);
 
-        jButton30.setBackground(new java.awt.Color(255, 204, 204));
-        jButton30.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
-        jButton30.setText("EXIT");
+        btnExit.setBackground(new java.awt.Color(255, 204, 204));
+        btnExit.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        btnExit.setText("EXIT");
+        btnExit.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnExitActionPerformed(evt);
+            }
+        });
 
-        jButton29.setBackground(new java.awt.Color(255, 204, 204));
-        jButton29.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
-        jButton29.setText("RESET");
+        btnReset.setBackground(new java.awt.Color(255, 204, 204));
+        btnReset.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        btnReset.setText("RESET");
+        btnReset.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnResetActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -96,7 +380,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel2Layout.createSequentialGroup()
@@ -110,11 +394,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
                                         .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addGap(30, 30, 30)))
                                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                    .addComponent(playerO, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(playerX, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(jPanel2Layout.createSequentialGroup()
                                 .addGap(19, 19, 19)
-                                .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 93, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -124,87 +408,87 @@ public class twoPlayersMode extends javax.swing.JFrame {
                 .addGap(63, 63, 63)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel23)
-                    .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(playerX, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(55, 55, 55)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel26, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(playerO, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel25))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 102, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton30, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton29, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnExit, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnReset, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(92, 92, 92))
         );
 
-        jButton21.setBackground(new java.awt.Color(0, 0, 0));
-        jButton21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton21.addActionListener(new java.awt.event.ActionListener() {
+        btn9.setBackground(new java.awt.Color(0, 0, 0));
+        btn9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton21ActionPerformed(evt);
+                btn9ActionPerformed(evt);
             }
         });
 
-        jButton26.setBackground(new java.awt.Color(0, 0, 0));
-        jButton26.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton26.addActionListener(new java.awt.event.ActionListener() {
+        btn1.setBackground(new java.awt.Color(0, 0, 0));
+        btn1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton26ActionPerformed(evt);
+                btn1ActionPerformed(evt);
             }
         });
 
-        jButton22.setBackground(new java.awt.Color(0, 0, 0));
-        jButton22.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton22.addActionListener(new java.awt.event.ActionListener() {
+        btn5.setBackground(new java.awt.Color(0, 0, 0));
+        btn5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton22ActionPerformed(evt);
+                btn5ActionPerformed(evt);
             }
         });
 
-        jButton20.setBackground(new java.awt.Color(0, 0, 0));
-        jButton20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton20.addActionListener(new java.awt.event.ActionListener() {
+        btn2.setBackground(new java.awt.Color(0, 0, 0));
+        btn2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton20ActionPerformed(evt);
+                btn2ActionPerformed(evt);
             }
         });
 
-        jButton23.setBackground(new java.awt.Color(0, 0, 0));
-        jButton23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton23.addActionListener(new java.awt.event.ActionListener() {
+        btn6.setBackground(new java.awt.Color(0, 0, 0));
+        btn6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton23ActionPerformed(evt);
+                btn6ActionPerformed(evt);
             }
         });
 
-        jButton25.setBackground(new java.awt.Color(0, 0, 0));
-        jButton25.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton25.addActionListener(new java.awt.event.ActionListener() {
+        btn3.setBackground(new java.awt.Color(0, 0, 0));
+        btn3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton25ActionPerformed(evt);
+                btn3ActionPerformed(evt);
             }
         });
 
-        jButton27.setBackground(new java.awt.Color(0, 0, 0));
-        jButton27.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton27.addActionListener(new java.awt.event.ActionListener() {
+        btn8.setBackground(new java.awt.Color(0, 0, 0));
+        btn8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton27ActionPerformed(evt);
+                btn8ActionPerformed(evt);
             }
         });
 
-        jButton28.setBackground(new java.awt.Color(0, 0, 0));
-        jButton28.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton28.addActionListener(new java.awt.event.ActionListener() {
+        btn7.setBackground(new java.awt.Color(0, 0, 0));
+        btn7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton28ActionPerformed(evt);
+                btn7ActionPerformed(evt);
             }
         });
 
-        jButton24.setBackground(new java.awt.Color(0, 0, 0));
-        jButton24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton24.addActionListener(new java.awt.event.ActionListener() {
+        btn4.setBackground(new java.awt.Color(0, 0, 0));
+        btn4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        btn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton24ActionPerformed(evt);
+                btn4ActionPerformed(evt);
             }
         });
 
@@ -224,23 +508,23 @@ public class twoPlayersMode extends javax.swing.JFrame {
                 .addGap(34, 34, 34)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton26, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn2, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(48, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -250,22 +534,22 @@ public class twoPlayersMode extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(22, 22, 22)
-                        .addComponent(jButton25, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(btn3, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton26, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(btn1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btn2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton24, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton22, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton23, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btn4, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn5, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn6, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton28, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton27, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton21, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btn7, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn8, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btn9, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(0, 36, Short.MAX_VALUE))
         );
 
@@ -280,7 +564,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
                         .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, twoplayer_modeLayout.createSequentialGroup()
-                        .addContainerGap(55, Short.MAX_VALUE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(42, 42, 42)))
                 .addGroup(twoplayer_modeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -309,7 +593,10 @@ public class twoPlayersMode extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(twoplayer_mode, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 772, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(twoplayer_mode, javax.swing.GroupLayout.DEFAULT_SIZE, 727, Short.MAX_VALUE)
+                .addGap(104, 104, 104))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -321,41 +608,105 @@ public class twoPlayersMode extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+    private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton20ActionPerformed
+    }//GEN-LAST:event_btn2ActionPerformed
 
-    private void jButton21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton21ActionPerformed
+    private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton21ActionPerformed
+    }//GEN-LAST:event_btn9ActionPerformed
 
-    private void jButton22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton22ActionPerformed
+    private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton22ActionPerformed
+    }//GEN-LAST:event_btn5ActionPerformed
 
-    private void jButton23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton23ActionPerformed
+    private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton23ActionPerformed
+    }//GEN-LAST:event_btn6ActionPerformed
 
-    private void jButton24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton24ActionPerformed
+    private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton24ActionPerformed
+    }//GEN-LAST:event_btn4ActionPerformed
 
-    private void jButton25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton25ActionPerformed
+    private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton25ActionPerformed
+    }//GEN-LAST:event_btn3ActionPerformed
 
-    private void jButton26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton26ActionPerformed
+    private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton26ActionPerformed
+    }//GEN-LAST:event_btn1ActionPerformed
 
-    private void jButton27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton27ActionPerformed
+    private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton27ActionPerformed
+    }//GEN-LAST:event_btn8ActionPerformed
 
-    private void jButton28ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton28ActionPerformed
+    private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton28ActionPerformed
+    }//GEN-LAST:event_btn7ActionPerformed
+
+    private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
+        Jframe twoPlayersMode = new Jframe ("Exit");
+        
+      if(JOptionPane.showConfirmDialog(twoPlayersMode,"confirm if you want to exit","Tic tac toe",JOptionPane.YES_NO_OPTION)!= JOptionPane.YES_NO_OPTION) 
+      {
+        System.exit(0);
+      }
+    }//GEN-LAST:event_btnExitActionPerformed
+
+    private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
+       btn1.setEnabled(true);
+        btn2.setEnabled(true);
+        btn3.setEnabled(true);  
+        btn4.setEnabled(true);
+        btn5.setEnabled(true);
+        btn6.setEnabled(true);
+        btn7.setEnabled(true);
+        btn8.setEnabled(true);
+        btn9.setEnabled(true);
+        
+        btn1.setText("");
+        btn2.setText("");
+        btn3.setText("");  
+        btn4.setText("");
+        btn5.setText("");
+        btn6.setText("");
+        btn7.setText("");
+        btn8.setText("");
+        btn9.setText("");
+        
+       playerX.setText("0");
+       playerO.setText("0");
+       
+        
+        
+        btn1.setBackground(color.Gray);
+        btn2.setBackground(color.Gray);
+        btn3.setBackground(color.Gray);
+        btn4.setBackground(color.Gray);
+        btn5.setBackground(color.Gray);
+        btn6.setBackground(color.Gray);
+        btn7.setBackground(color.Gray);
+        btn8.setBackground(color.Gray);
+        btn9.setBackground(color.Gray);
+        
+                
+                
+        btn2.setText("");
+        btn3.setText("");  
+        btn4.setText("");
+        btn5.setText("");
+        btn6.setText("");
+        btn7.setText("");
+        btn8.setText("");
+        btn9.setText("");
+        
+        
+        
+         
+         
+             
+       
+    }//GEN-LAST:event_btnResetActionPerformed
 
     /**
      * @param args the command line arguments
@@ -393,26 +744,41 @@ public class twoPlayersMode extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton20;
-    private javax.swing.JButton jButton21;
-    private javax.swing.JButton jButton22;
-    private javax.swing.JButton jButton23;
-    private javax.swing.JButton jButton24;
-    private javax.swing.JButton jButton25;
-    private javax.swing.JButton jButton26;
-    private javax.swing.JButton jButton27;
-    private javax.swing.JButton jButton28;
-    private javax.swing.JButton jButton29;
-    private javax.swing.JButton jButton30;
+    private javax.swing.JButton btn1;
+    private javax.swing.JButton btn2;
+    private javax.swing.JButton btn3;
+    private javax.swing.JButton btn4;
+    private javax.swing.JButton btn5;
+    private javax.swing.JButton btn6;
+    private javax.swing.JButton btn7;
+    private javax.swing.JButton btn8;
+    private javax.swing.JButton btn9;
+    private javax.swing.JButton btnExit;
+    private javax.swing.JButton btnReset;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
+    private javax.swing.JLabel playerO;
+    private javax.swing.JLabel playerX;
     private javax.swing.JPanel twoplayer_mode;
     // End of variables declaration//GEN-END:variables
+
+    private static class color {
+
+        private static Color red;
+        private static Color Gray;
+        private static Color green;
+        private static Color cyan;
+        private static Color Orange;
+        private static Color MAGENTA;
+        private static Color Pink;
+        private static Color blue;
+
+        public color() {
+        }
+    }
 }
