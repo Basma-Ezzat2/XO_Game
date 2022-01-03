@@ -9,7 +9,10 @@ package MyGUI;
  *
  * @author Lap Shop
  */
-class Jframe {
+public class Jframe {
+
+    public Jframe(String exit) {
+    }
 
     Jframe(String exit) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.

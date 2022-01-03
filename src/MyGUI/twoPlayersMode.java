@@ -19,7 +19,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
     private String startGame="X";
     private int xCount = 0;
     private int oCount = 0;
-    boolean cheaker;
+    boolean checker;
     public twoPlayersMode() {
         initComponents();
     }
@@ -609,27 +609,87 @@ public class twoPlayersMode extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btn2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn2ActionPerformed
-        // TODO add your handling code here:
+         btn2.setText(startGame);
+        if (startGame.equalsIgnoreCase("X"))
+        {
+           checker = false;
+        }
+        else 
+         {
+           checker = true;
+        }
+        choose_a_Player();
+        winningGame();
     }//GEN-LAST:event_btn2ActionPerformed
 
     private void btn9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn9ActionPerformed
-        // TODO add your handling code here:
+          btn9.setText(startGame);
+        if (startGame.equalsIgnoreCase("X"))
+        {
+           checker = false;
+        }
+        else 
+         {
+           checker = true;
+        }
+        choose_a_Player();
+        winningGame();
     }//GEN-LAST:event_btn9ActionPerformed
 
     private void btn5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn5ActionPerformed
-        // TODO add your handling code here:
+          btn5.setText(startGame);
+        if (startGame.equalsIgnoreCase("X"))
+        {
+           checker = false;
+        }
+        else 
+         {
+           checker = true;
+        }
+        choose_a_Player();
+        winningGame();
     }//GEN-LAST:event_btn5ActionPerformed
 
     private void btn6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn6ActionPerformed
-        // TODO add your handling code here:
+        btn6.setText(startGame);
+        if (startGame.equalsIgnoreCase("X"))
+        {
+           checker = false;
+        }
+        else 
+         {
+           checker = true;
+        }
+        choose_a_Player();
+        winningGame();
     }//GEN-LAST:event_btn6ActionPerformed
 
     private void btn4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn4ActionPerformed
-        // TODO add your handling code here:
+          btn4.setText(startGame);
+        if (startGame.equalsIgnoreCase("X"))
+        {
+           checker = false;
+        }
+        else 
+         {
+           checker = true;
+        }
+        choose_a_Player();
+        winningGame();
     }//GEN-LAST:event_btn4ActionPerformed
 
     private void btn3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn3ActionPerformed
-        // TODO add your handling code here:
+          btn3.setText(startGame);
+        if (startGame.equalsIgnoreCase("X"))
+        {
+           checker = false;
+        }
+        else 
+         {
+           checker = true;
+        }
+        choose_a_Player();
+        winningGame();
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
@@ -637,17 +697,37 @@ public class twoPlayersMode extends javax.swing.JFrame {
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
-        // TODO add your handling code here:
+        btn8.setText(startGame);
+        if (startGame.equalsIgnoreCase("X"))
+        {
+           checker = false;
+        }
+        else 
+         {
+           checker = true;
+        }
+        choose_a_Player();
+        winningGame();
     }//GEN-LAST:event_btn8ActionPerformed
 
     private void btn7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn7ActionPerformed
-        // TODO add your handling code here:
+          btn7.setText(startGame);
+        if (startGame.equalsIgnoreCase("X"))
+        {
+           checker = false;
+        }
+        else 
+         {
+           checker = true;
+        }
+        choose_a_Player();
+        winningGame();
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-        Jframe twoPlayersMode = new Jframe ("Exit");
+          new Jframe ("Exit");
         
-      if(JOptionPane.showConfirmDialog(twoPlayersMode,"confirm if you want to exit","Tic tac toe",JOptionPane.YES_NO_OPTION)!= JOptionPane.YES_NO_OPTION) 
+      if(JOptionPane.showConfirmDialog(twoPlayersMode.this,"confirm if you want to exit","Tic tac toe",JOptionPane.YES_NO_OPTION)!= JOptionPane.YES_NO_OPTION) 
       {
         System.exit(0);
       }
