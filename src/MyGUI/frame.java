@@ -9,12 +9,9 @@ package MyGUI;
  *
  * @author Lap Shop
  */
-public class Jframe {
+public class frame {
 
-    public Jframe(String exit) {
+    public frame(String exit) {
     }
-
-  
-    
     
 }

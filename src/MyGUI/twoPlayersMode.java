@@ -273,7 +273,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
                
            if (b3 ==("O")  && b5 ==("O")  && b7==("O"))
          {
-             Component twoPlayersMode;
+          
             JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
               btn4.setBackground(color.Pink);
               btn5.setBackground(color.Pink);
@@ -725,7 +725,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-          new Jframe ("Exit");
+        Jframe jframe = new Jframe ("Exit");
         
       if(JOptionPane.showConfirmDialog(twoPlayersMode.this,"confirm if you want to exit","Tic tac toe",JOptionPane.YES_NO_OPTION)!= JOptionPane.YES_NO_OPTION) 
       {
