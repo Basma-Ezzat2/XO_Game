@@ -52,11 +52,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
          String b9 = btn9.getText();
          if (b1 ==("X")  && b2 ==("X")  && b3 ==("X"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn1.setBackground(color.green);
-              btn2.setBackground(color.green);
-              btn3.setBackground(color.green);
+            
+            JOptionPane.showMessageDialog (this,"Player X wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn1.setBackground(Color.green);
+              btn2.setBackground(Color.green);
+              btn3.setBackground(Color.green);
               xCount++;
               gameScore();
             
@@ -65,11 +65,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
          
            if (b4 ==("X")  && b5 ==("X")  && b6 ==("X"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.cyan);
-              btn5.setBackground(color.cyan);
-              btn6.setBackground(color.cyan);
+            
+            JOptionPane.showMessageDialog(this,"Player X wins","Tic tac toe",JOptionPane.YES_OPTION);
+              btn4.setBackground(Color.green);
+              btn5.setBackground(Color.green);
+              btn6.setBackground(Color.green);
               xCount++;
               gameScore();
             
@@ -78,11 +78,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
            
              if (b7 ==("X")  && b8 ==("X")  && b9 ==("X"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn7.setBackground(color.Orange);
-              btn8.setBackground(color.Orange);
-              btn9.setBackground(color.Orange);
+           
+            JOptionPane.showMessageDialog(this,"Player X wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn7.setBackground(Color.green);
+              btn8.setBackground(Color.green);
+              btn9.setBackground(Color.green);
               xCount++;
               gameScore();
             
@@ -91,11 +91,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
              
                if (b4 ==("X")  && b5 ==("X")  && b6 ==("X"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.cyan);
-              btn5.setBackground(color.cyan);
-              btn6.setBackground(color.cyan);
+             
+            JOptionPane.showMessageDialog(this,"Player X wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn4.setBackground(Color.green);
+              btn5.setBackground(Color.green);
+              btn6.setBackground(Color.green);
               xCount++;
               gameScore();
             
@@ -103,11 +103,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
          }
             if (b1 ==("X")  && b4 ==("X")  && b7 ==("X"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.MAGENTA);
-              btn5.setBackground(color.MAGENTA);
-              btn6.setBackground(color.MAGENTA);
+            
+            JOptionPane.showMessageDialog(this,"Player X wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn1.setBackground(Color.green);
+              btn4.setBackground(Color.green);
+              btn7.setBackground(Color.green);
               xCount++;
               gameScore();
             
@@ -116,11 +116,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
                    
            if (b2 ==("X")  && b5 ==("X")  && b8 ==("X"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.red);
-              btn5.setBackground(color.red);
-              btn6.setBackground(color.red);
+           
+            JOptionPane.showMessageDialog(this,"Player X wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn2.setBackground(Color.green);
+              btn5.setBackground(Color.green);
+              btn8.setBackground(Color.green);
               xCount++;
               gameScore();
             
@@ -130,11 +130,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
            
              if (b3 ==("X")  && b6 ==("X")  && b9 ==("X"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.red);
-              btn5.setBackground(color.red);
-              btn6.setBackground(color.red);
+           
+            JOptionPane.showMessageDialog(this,"Player X wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn3.setBackground(Color.green);
+              btn6.setBackground(Color.green);
+              btn9.setBackground(Color.green);
               xCount++;
               gameScore();
             
@@ -143,11 +143,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
              
                if (b1 ==("X")  && b5 ==("X")  && b9 ==("X"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.blue);
-              btn5.setBackground(color.blue);
-              btn6.setBackground(color.blue);
+           
+            JOptionPane.showMessageDialog(this,"Player X wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn1.setBackground(Color.green);
+              btn5.setBackground(Color.green);
+              btn9.setBackground(Color.green);
               xCount++;
               gameScore();
             
@@ -156,11 +156,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
                
            if (b3 ==("X")  && b5 ==("X")  && b7==("X"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player X wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.Pink);
-              btn5.setBackground(color.Pink);
-              btn6.setBackground(color.Pink);
+           
+            JOptionPane.showMessageDialog(this,"Player X wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn3.setBackground(Color.green);
+              btn5.setBackground(Color.green);
+              btn7.setBackground(Color.green);
               xCount++;
               gameScore();
             
@@ -169,11 +169,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
            
                     if (b1 ==("O")  && b2 ==("O")  && b3 ==("O"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn1.setBackground(color.green);
-              btn2.setBackground(color.green);
-              btn3.setBackground(color.green);
+            
+            JOptionPane.showMessageDialog(this,"Player O wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn1.setBackground(Color.green);
+              btn2.setBackground(Color.green);
+              btn3.setBackground(Color.green);
               oCount++;
               gameScore();
             
@@ -182,11 +182,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
          
            if (b4 ==("O")  && b5 ==("O")  && b6 ==("O"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.cyan);
-              btn5.setBackground(color.cyan);
-              btn6.setBackground(color.cyan);
+           
+            JOptionPane.showMessageDialog(this,"Player O wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn4.setBackground(Color.green);
+              btn5.setBackground(Color.green);
+              btn6.setBackground(Color.green);
               oCount++;
               gameScore();
             
@@ -195,11 +195,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
            
              if (b7 ==("O")  && b8 ==("O")  && b9 ==("O"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn7.setBackground(color.Orange);
-              btn8.setBackground(color.Orange);
-              btn9.setBackground(color.Orange);
+            
+            JOptionPane.showMessageDialog(this,"Player O wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn7.setBackground(Color.green);
+              btn8.setBackground(Color.green);
+              btn9.setBackground(Color.green);
               oCount++;
               gameScore();
             
@@ -208,11 +208,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
              
                if (b4 ==("O")  && b5 ==("O")  && b6 ==("O"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.cyan);
-              btn5.setBackground(color.cyan);
-              btn6.setBackground(color.cyan);
+           
+            JOptionPane.showMessageDialog(this,"Player O wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn4.setBackground(Color.green);
+              btn5.setBackground(Color.green);
+              btn6.setBackground(Color.green);
               oCount++;
               gameScore();
             
@@ -220,11 +220,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
          }
             if (b1 ==("O")  && b4 ==("O")  && b7 ==("O"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.MAGENTA);
-              btn5.setBackground(color.MAGENTA);
-              btn6.setBackground(color.MAGENTA);
+            
+            JOptionPane.showMessageDialog(this,"Player O wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn1.setBackground(Color.green);
+              btn4.setBackground(Color.green);
+              btn7.setBackground(Color.green);
               oCount++;
               gameScore();
             
@@ -233,11 +233,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
                    
            if (b2 ==("O")  && b5 ==("O")  && b8 ==("O"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.red);
-              btn5.setBackground(color.red);
-              btn6.setBackground(color.red);
+             
+            JOptionPane.showMessageDialog(this,"Player O wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn2.setBackground(Color.green);
+              btn5.setBackground(Color.green);
+              btn8.setBackground(Color.green);
               oCount++;
               gameScore();
             
@@ -247,11 +247,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
            
              if (b3 ==("O")  && b6 ==("O")  && b9 ==("O"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.red);
-              btn5.setBackground(color.red);
-              btn6.setBackground(color.red);
+            
+            JOptionPane.showMessageDialog(this,"Player O wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn3.setBackground(Color.green);
+              btn6.setBackground(Color.green);
+              btn9.setBackground(Color.green);
               oCount++;
               gameScore();
             
@@ -260,11 +260,11 @@ public class twoPlayersMode extends javax.swing.JFrame {
              
                if (b1 ==("O")  && b5 ==("O")  && b9 ==("O"))
          {
-             Component twoPlayersMode;
-            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.blue);
-              btn5.setBackground(color.blue);
-              btn6.setBackground(color.blue);
+            
+            JOptionPane.showMessageDialog(this,"Player O wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn1.setBackground(Color.green);
+              btn5.setBackground(Color.green);
+              btn9.setBackground(Color.green);
               oCount++;
               gameScore();
             
@@ -274,10 +274,10 @@ public class twoPlayersMode extends javax.swing.JFrame {
            if (b3 ==("O")  && b5 ==("O")  && b7==("O"))
          {
           
-            JOptionPane.showConfirmDialog(this,"Player O wins","Tic tac toe",JOptionPane.INFORMATION_MESSAGE);
-              btn4.setBackground(color.Pink);
-              btn5.setBackground(color.Pink);
-              btn6.setBackground(color.Pink);
+            JOptionPane.showMessageDialog(this,"Player O wins","Tic tac toe",JOptionPane.OK_OPTION);
+              btn3.setBackground(Color.green);
+              btn5.setBackground(Color.green);
+              btn7.setBackground(Color.green);
               oCount++;
               gameScore();
             
@@ -596,7 +596,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(twoplayer_mode, javax.swing.GroupLayout.DEFAULT_SIZE, 727, Short.MAX_VALUE)
-                .addGap(104, 104, 104))
+                .addGap(312, 312, 312))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -693,7 +693,17 @@ public class twoPlayersMode extends javax.swing.JFrame {
     }//GEN-LAST:event_btn3ActionPerformed
 
     private void btn1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn1ActionPerformed
-        // TODO add your handling code here:
+          btn1.setText(startGame);
+        if (startGame.equalsIgnoreCase("X"))
+        {
+           checker = false;
+        }
+        else 
+         {
+           checker = true;
+        }
+        choose_a_Player();
+        winningGame();
     }//GEN-LAST:event_btn1ActionPerformed
 
     private void btn8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn8ActionPerformed
@@ -725,12 +735,10 @@ public class twoPlayersMode extends javax.swing.JFrame {
     }//GEN-LAST:event_btn7ActionPerformed
 
     private void btnExitActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExitActionPerformed
-        Jframe jframe = new Jframe ("Exit");
-        
-      if(JOptionPane.showConfirmDialog(twoPlayersMode.this,"confirm if you want to exit","Tic tac toe",JOptionPane.YES_NO_OPTION)!= JOptionPane.YES_NO_OPTION) 
-      {
-        System.exit(0);
-      }
+         Modes secondform = new Modes();
+           secondform.setVisible(true);
+          setVisible(false);
+               dispose();
     }//GEN-LAST:event_btnExitActionPerformed
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
@@ -759,15 +767,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
        
         
         
-        btn1.setBackground(color.Gray);
-        btn2.setBackground(color.Gray);
-        btn3.setBackground(color.Gray);
-        btn4.setBackground(color.Gray);
-        btn5.setBackground(color.Gray);
-        btn6.setBackground(color.Gray);
-        btn7.setBackground(color.Gray);
-        btn8.setBackground(color.Gray);
-        btn9.setBackground(color.Gray);
+       
         
                 
                 
@@ -847,18 +847,5 @@ public class twoPlayersMode extends javax.swing.JFrame {
     private javax.swing.JPanel twoplayer_mode;
     // End of variables declaration//GEN-END:variables
 
-    private static class color {
-
-        private static Color red;
-        private static Color Gray;
-        private static Color green;
-        private static Color cyan;
-        private static Color Orange;
-        private static Color MAGENTA;
-        private static Color Pink;
-        private static Color blue;
-
-        public color() {
-        }
-    }
+  
 }
