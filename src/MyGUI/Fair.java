@@ -28,26 +28,38 @@ public class Fair extends javax.swing.JFrame {
     private void initComponents() {
 
         Fair_video = new javax.swing.JPanel();
-        jLabel19 = new javax.swing.JLabel();
         jLabel16 = new javax.swing.JLabel();
-        jButton18 = new javax.swing.JButton();
+        jButton19 = new javax.swing.JButton();
+        btnHome = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Fair_video.setBackground(new java.awt.Color(0, 102, 102));
         Fair_video.setPreferredSize(new java.awt.Dimension(762, 496));
 
-        jLabel19.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel19.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
-        jLabel19.setText("HOME");
-        jLabel19.setOpaque(true);
-
         jLabel16.setFont(new java.awt.Font("Tempus Sans ITC", 1, 36)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 204, 51));
         jLabel16.setText("MATCH DRAWN");
 
-        jButton18.setBackground(new java.awt.Color(255, 255, 255));
-        jButton18.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
-        jButton18.setText("Play again");
+        jButton19.setBackground(new java.awt.Color(0, 0, 0));
+        jButton19.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
+        jButton19.setForeground(new java.awt.Color(255, 204, 51));
+        jButton19.setText("Play again");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
+
+        btnHome.setBackground(new java.awt.Color(0, 51, 51));
+        btnHome.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        btnHome.setForeground(new java.awt.Color(255, 204, 51));
+        btnHome.setText("Home");
+        btnHome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHomeActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout Fair_videoLayout = new javax.swing.GroupLayout(Fair_video);
         Fair_video.setLayout(Fair_videoLayout);
@@ -56,46 +68,53 @@ public class Fair extends javax.swing.JFrame {
             .addGroup(Fair_videoLayout.createSequentialGroup()
                 .addGroup(Fair_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Fair_videoLayout.createSequentialGroup()
-                        .addGap(23, 23, 23)
-                        .addComponent(jLabel19, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(Fair_videoLayout.createSequentialGroup()
                         .addGap(213, 213, 213)
-                        .addComponent(jLabel16)))
-                .addContainerGap(206, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Fair_videoLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(326, 326, 326))
+                        .addComponent(jLabel16))
+                    .addGroup(Fair_videoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnHome))
+                    .addGroup(Fair_videoLayout.createSequentialGroup()
+                        .addGap(271, 271, 271)
+                        .addComponent(jButton19)))
+                .addContainerGap(192, Short.MAX_VALUE))
         );
         Fair_videoLayout.setVerticalGroup(
             Fair_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Fair_videoLayout.createSequentialGroup()
-                .addGap(24, 24, 24)
-                .addComponent(jLabel19)
-                .addGap(17, 17, 17)
+                .addGap(15, 15, 15)
+                .addComponent(btnHome)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel16)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 285, Short.MAX_VALUE)
-                .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 208, Short.MAX_VALUE)
+                .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(36, 36, 36))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addComponent(Fair_video, javax.swing.GroupLayout.PREFERRED_SIZE, 716, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+            .addComponent(Fair_video, javax.swing.GroupLayout.DEFAULT_SIZE, 702, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addComponent(Fair_video, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(Fair_video, javax.swing.GroupLayout.PREFERRED_SIZE, 415, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        new Modes().setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void btnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomeActionPerformed
+        new Welcome().setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_btnHomeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -134,8 +153,8 @@ public class Fair extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Fair_video;
-    private javax.swing.JButton jButton18;
+    private javax.swing.JButton btnHome;
+    private javax.swing.JButton jButton19;
     private javax.swing.JLabel jLabel16;
-    private javax.swing.JLabel jLabel19;
     // End of variables declaration//GEN-END:variables
 }

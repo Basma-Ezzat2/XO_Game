@@ -136,7 +136,7 @@ public class singleMode extends javax.swing.JFrame {
                 .addGap(92, 92, 92))
         );
 
-        jButton21.setBackground(new java.awt.Color(0, 0, 0));
+        jButton21.setBackground(new java.awt.Color(255, 204, 204));
         jButton21.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -144,7 +144,7 @@ public class singleMode extends javax.swing.JFrame {
             }
         });
 
-        jButton26.setBackground(new java.awt.Color(0, 0, 0));
+        jButton26.setBackground(new java.awt.Color(255, 204, 204));
         jButton26.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -152,7 +152,7 @@ public class singleMode extends javax.swing.JFrame {
             }
         });
 
-        jButton22.setBackground(new java.awt.Color(0, 0, 0));
+        jButton22.setBackground(new java.awt.Color(255, 204, 204));
         jButton22.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -160,7 +160,7 @@ public class singleMode extends javax.swing.JFrame {
             }
         });
 
-        jButton20.setBackground(new java.awt.Color(0, 0, 0));
+        jButton20.setBackground(new java.awt.Color(255, 204, 204));
         jButton20.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -168,7 +168,7 @@ public class singleMode extends javax.swing.JFrame {
             }
         });
 
-        jButton23.setBackground(new java.awt.Color(0, 0, 0));
+        jButton23.setBackground(new java.awt.Color(255, 204, 204));
         jButton23.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -176,7 +176,7 @@ public class singleMode extends javax.swing.JFrame {
             }
         });
 
-        jButton25.setBackground(new java.awt.Color(0, 0, 0));
+        jButton25.setBackground(new java.awt.Color(255, 204, 204));
         jButton25.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -184,7 +184,7 @@ public class singleMode extends javax.swing.JFrame {
             }
         });
 
-        jButton27.setBackground(new java.awt.Color(0, 0, 0));
+        jButton27.setBackground(new java.awt.Color(255, 204, 204));
         jButton27.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton27.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -192,7 +192,7 @@ public class singleMode extends javax.swing.JFrame {
             }
         });
 
-        jButton28.setBackground(new java.awt.Color(0, 0, 0));
+        jButton28.setBackground(new java.awt.Color(255, 204, 204));
         jButton28.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton28.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -200,7 +200,7 @@ public class singleMode extends javax.swing.JFrame {
             }
         });
 
-        jButton24.setBackground(new java.awt.Color(0, 0, 0));
+        jButton24.setBackground(new java.awt.Color(255, 204, 204));
         jButton24.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jButton24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

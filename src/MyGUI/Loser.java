@@ -27,7 +27,7 @@ private final JFXPanel jfxPanel= new JFXPanel();
     public Loser() {
         initComponents();
          createScene();
-        setTitle("losset");
+        setTitle("losser");
         
         setResizable(false);
         setLocationRelativeTo(null);
@@ -40,7 +40,7 @@ private final JFXPanel jfxPanel= new JFXPanel();
     private void createScene(){
         Platform.runLater(new Runnable(){
             public void run (){
-                File file=new File("C:\\Users\\3BOOD\\Documents\\GitHub\\XO_Game\\src\\losser.mp4");
+                File file=new File("C:\\Users\\user\\Downloads\\loser.mp4");
                 MediaPlayer oracleVid =new MediaPlayer(new Media(file.toURI().toString()));
                 
                 jfxPanel.setScene(new Scene (new Group(new MediaView(oracleVid))));
@@ -64,23 +64,15 @@ private final JFXPanel jfxPanel= new JFXPanel();
     private void initComponents() {
 
         loser_video = new javax.swing.JPanel();
-        jLabel18 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
         jButton19 = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jPanel1 = new javax.swing.JPanel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         loser_video.setBackground(new java.awt.Color(0, 102, 102));
         loser_video.setPreferredSize(new java.awt.Dimension(762, 496));
-
-        jLabel18.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel18.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
-        jLabel18.setForeground(new java.awt.Color(255, 102, 102));
-        jLabel18.setText("HOME");
-        jLabel18.setOpaque(true);
 
         jLabel15.setFont(new java.awt.Font("Tempus Sans ITC", 1, 36)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(102, 0, 51));
@@ -89,65 +81,58 @@ private final JFXPanel jfxPanel= new JFXPanel();
         jButton19.setBackground(new java.awt.Color(255, 153, 153));
         jButton19.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
         jButton19.setText("Play again");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
 
-        jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Tempus Sans ITC", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(255, 153, 153));
+        jButton1.setText("Home");
+        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 504, Short.MAX_VALUE)
+            .addGap(0, 0, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 0, Short.MAX_VALUE)
+            .addGap(0, 221, Short.MAX_VALUE)
         );
 
         javax.swing.GroupLayout loser_videoLayout = new javax.swing.GroupLayout(loser_video);
         loser_video.setLayout(loser_videoLayout);
         loser_videoLayout.setHorizontalGroup(
             loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(loser_videoLayout.createSequentialGroup()
-                .addGap(350, 350, 350)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, loser_videoLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jButton19)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(298, 298, 298))
             .addGroup(loser_videoLayout.createSequentialGroup()
-                .addGroup(loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(loser_videoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel18, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(119, 119, 119)
-                        .addComponent(jLabel15))
-                    .addGroup(loser_videoLayout.createSequentialGroup()
-                        .addGap(152, 152, 152)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 412, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(293, 293, 293)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 352, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(101, 101, 101)
+                .addGroup(loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(0, 162, Short.MAX_VALUE))
         );
         loser_videoLayout.setVerticalGroup(
             loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(loser_videoLayout.createSequentialGroup()
                 .addGroup(loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(loser_videoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel18))
-                    .addGroup(loser_videoLayout.createSequentialGroup()
                         .addGap(20, 20, 20)
-                        .addComponent(jLabel15)))
-                .addGroup(loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel15))
                     .addGroup(loser_videoLayout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addGroup(loser_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 187, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 62, Short.MAX_VALUE))
-                    .addGroup(loser_videoLayout.createSequentialGroup()
-                        .addGap(30, 30, 30)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
+                        .addContainerGap()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 46, Short.MAX_VALUE)
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(32, 32, 32)
                 .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
@@ -155,10 +140,7 @@ private final JFXPanel jfxPanel= new JFXPanel();
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(loser_video, javax.swing.GroupLayout.DEFAULT_SIZE, 1717, Short.MAX_VALUE)
-                .addContainerGap())
+            .addComponent(loser_video, javax.swing.GroupLayout.DEFAULT_SIZE, 743, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -167,6 +149,11 @@ private final JFXPanel jfxPanel= new JFXPanel();
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+       new Modes().setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_jButton19ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -204,11 +191,9 @@ private final JFXPanel jfxPanel= new JFXPanel();
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton19;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel15;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel loser_video;
     // End of variables declaration//GEN-END:variables

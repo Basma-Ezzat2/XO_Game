@@ -54,9 +54,9 @@ public class twoPlayersMode extends javax.swing.JFrame {
          {
             
             JOptionPane.showMessageDialog (this,"Player X wins","Tic tac toe",JOptionPane.OK_OPTION);
-              btn1.setBackground(Color.green);
-              btn2.setBackground(Color.green);
-              btn3.setBackground(Color.green);
+              btn1.setBackground(Color.PINK);
+              btn2.setBackground(Color.PINK);
+              btn3.setBackground(Color.PINK);
               xCount++;
               gameScore();
             
@@ -80,9 +80,9 @@ public class twoPlayersMode extends javax.swing.JFrame {
          {
            
             JOptionPane.showMessageDialog(this,"Player X wins","Tic tac toe",JOptionPane.OK_OPTION);
-              btn7.setBackground(Color.green);
-              btn8.setBackground(Color.green);
-              btn9.setBackground(Color.green);
+              btn7.setBackground(Color.YELLOW);
+              btn8.setBackground(Color.YELLOW);
+              btn9.setBackground(Color.YELLOW);
               xCount++;
               gameScore();
             
@@ -93,9 +93,9 @@ public class twoPlayersMode extends javax.swing.JFrame {
          {
              
             JOptionPane.showMessageDialog(this,"Player X wins","Tic tac toe",JOptionPane.OK_OPTION);
-              btn4.setBackground(Color.green);
-              btn5.setBackground(Color.green);
-              btn6.setBackground(Color.green);
+              btn4.setBackground(Color.RED);
+              btn5.setBackground(Color.RED);
+              btn6.setBackground(Color.RED);
               xCount++;
               gameScore();
             
@@ -105,9 +105,9 @@ public class twoPlayersMode extends javax.swing.JFrame {
          {
             
             JOptionPane.showMessageDialog(this,"Player X wins","Tic tac toe",JOptionPane.OK_OPTION);
-              btn1.setBackground(Color.green);
-              btn4.setBackground(Color.green);
-              btn7.setBackground(Color.green);
+              btn1.setBackground(Color.ORANGE);
+              btn4.setBackground(Color.ORANGE);
+              btn7.setBackground(Color.ORANGE);
               xCount++;
               gameScore();
             
@@ -302,8 +302,6 @@ public class twoPlayersMode extends javax.swing.JFrame {
     private void initComponents() {
 
         twoplayer_mode = new javax.swing.JPanel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
         jLabel23 = new javax.swing.JLabel();
         jLabel25 = new javax.swing.JLabel();
@@ -322,21 +320,14 @@ public class twoPlayersMode extends javax.swing.JFrame {
         btn7 = new javax.swing.JButton();
         btn4 = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
+        btnHome = new javax.swing.JButton();
+        recbtn = new javax.swing.JButton();
+        histbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         twoplayer_mode.setBackground(new java.awt.Color(0, 102, 102));
         twoplayer_mode.setPreferredSize(new java.awt.Dimension(762, 496));
-
-        jLabel22.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel22.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 102, 102));
-        jLabel22.setText("HOME");
-
-        jLabel27.setBackground(new java.awt.Color(204, 204, 204));
-        jLabel27.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(255, 102, 102));
-        jLabel27.setText("RECORD");
 
         jPanel2.setBackground(new java.awt.Color(102, 0, 51));
 
@@ -420,7 +411,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
                 .addGap(92, 92, 92))
         );
 
-        btn9.setBackground(new java.awt.Color(0, 0, 0));
+        btn9.setBackground(new java.awt.Color(255, 255, 255));
         btn9.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -428,7 +419,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
             }
         });
 
-        btn1.setBackground(new java.awt.Color(0, 0, 0));
+        btn1.setBackground(new java.awt.Color(255, 255, 255));
         btn1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -436,7 +427,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
             }
         });
 
-        btn5.setBackground(new java.awt.Color(0, 0, 0));
+        btn5.setBackground(new java.awt.Color(255, 255, 255));
         btn5.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -444,7 +435,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
             }
         });
 
-        btn2.setBackground(new java.awt.Color(0, 0, 0));
+        btn2.setBackground(new java.awt.Color(255, 255, 255));
         btn2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -452,7 +443,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
             }
         });
 
-        btn6.setBackground(new java.awt.Color(0, 0, 0));
+        btn6.setBackground(new java.awt.Color(255, 255, 255));
         btn6.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -460,7 +451,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
             }
         });
 
-        btn3.setBackground(new java.awt.Color(0, 0, 0));
+        btn3.setBackground(new java.awt.Color(255, 255, 255));
         btn3.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -468,7 +459,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
             }
         });
 
-        btn8.setBackground(new java.awt.Color(0, 0, 0));
+        btn8.setBackground(new java.awt.Color(255, 255, 255));
         btn8.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -476,7 +467,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
             }
         });
 
-        btn7.setBackground(new java.awt.Color(0, 0, 0));
+        btn7.setBackground(new java.awt.Color(255, 255, 255));
         btn7.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -484,7 +475,7 @@ public class twoPlayersMode extends javax.swing.JFrame {
             }
         });
 
-        btn4.setBackground(new java.awt.Color(0, 0, 0));
+        btn4.setBackground(new java.awt.Color(255, 255, 255));
         btn4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btn4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -553,6 +544,36 @@ public class twoPlayersMode extends javax.swing.JFrame {
                 .addGap(0, 36, Short.MAX_VALUE))
         );
 
+        btnHome.setBackground(new java.awt.Color(0, 51, 51));
+        btnHome.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        btnHome.setForeground(new java.awt.Color(255, 153, 153));
+        btnHome.setText("Home");
+        btnHome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHomeActionPerformed(evt);
+            }
+        });
+
+        recbtn.setBackground(new java.awt.Color(0, 51, 51));
+        recbtn.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        recbtn.setForeground(new java.awt.Color(255, 153, 153));
+        recbtn.setText("Record");
+        recbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                recbtnActionPerformed(evt);
+            }
+        });
+
+        histbtn.setBackground(new java.awt.Color(0, 51, 51));
+        histbtn.setFont(new java.awt.Font("Tempus Sans ITC", 1, 14)); // NOI18N
+        histbtn.setForeground(new java.awt.Color(255, 102, 102));
+        histbtn.setText("History");
+        histbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                histbtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout twoplayer_modeLayout = new javax.swing.GroupLayout(twoplayer_mode);
         twoplayer_mode.setLayout(twoplayer_modeLayout);
         twoplayer_modeLayout.setHorizontalGroup(
@@ -560,16 +581,21 @@ public class twoPlayersMode extends javax.swing.JFrame {
             .addGroup(twoplayer_modeLayout.createSequentialGroup()
                 .addGroup(twoplayer_modeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(twoplayer_modeLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, twoplayer_modeLayout.createSequentialGroup()
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addContainerGap(20, Short.MAX_VALUE)
                         .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(42, 42, 42)))
+                        .addGap(42, 42, 42))
+                    .addGroup(twoplayer_modeLayout.createSequentialGroup()
+                        .addGroup(twoplayer_modeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(twoplayer_modeLayout.createSequentialGroup()
+                                .addContainerGap()
+                                .addComponent(btnHome))
+                            .addGroup(twoplayer_modeLayout.createSequentialGroup()
+                                .addGap(136, 136, 136)
+                                .addComponent(histbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addGroup(twoplayer_modeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(recbtn, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addContainerGap())
         );
         twoplayer_modeLayout.setVerticalGroup(
@@ -577,26 +603,25 @@ public class twoPlayersMode extends javax.swing.JFrame {
             .addGroup(twoplayer_modeLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(twoplayer_modeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel22)
-                    .addComponent(jLabel27))
+                    .addComponent(btnHome)
+                    .addComponent(recbtn))
                 .addGroup(twoplayer_modeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(twoplayer_modeLayout.createSequentialGroup()
                         .addGap(29, 29, 29)
                         .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(twoplayer_modeLayout.createSequentialGroup()
                         .addGap(48, 48, 48)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(17, Short.MAX_VALUE))
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(histbtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(twoplayer_mode, javax.swing.GroupLayout.DEFAULT_SIZE, 727, Short.MAX_VALUE)
-                .addGap(312, 312, 312))
+            .addComponent(twoplayer_mode, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 737, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -764,21 +789,17 @@ public class twoPlayersMode extends javax.swing.JFrame {
         
        playerX.setText("0");
        playerO.setText("0");
-       
+      
+        btn1.setBackground(Color.WHITE);
+        btn2.setBackground(Color.WHITE);
+        btn3.setBackground(Color.WHITE);
+        btn4.setBackground(Color.WHITE);
+        btn5.setBackground(Color.WHITE);
+        btn6.setBackground(Color.WHITE);
+        btn7.setBackground(Color.WHITE);
+        btn8.setBackground(Color.WHITE);
+        btn9.setBackground(Color.WHITE);
         
-        
-       
-        
-                
-                
-        btn2.setText("");
-        btn3.setText("");  
-        btn4.setText("");
-        btn5.setText("");
-        btn6.setText("");
-        btn7.setText("");
-        btn8.setText("");
-        btn9.setText("");
         
         
         
@@ -787,6 +808,20 @@ public class twoPlayersMode extends javax.swing.JFrame {
              
        
     }//GEN-LAST:event_btnResetActionPerformed
+
+    private void btnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomeActionPerformed
+        new Welcome().setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_btnHomeActionPerformed
+
+    private void recbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_recbtnActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_recbtnActionPerformed
+
+    private void histbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_histbtnActionPerformed
+        new GameRecorded().setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_histbtnActionPerformed
 
     /**
      * @param args the command line arguments
@@ -834,16 +869,17 @@ public class twoPlayersMode extends javax.swing.JFrame {
     private javax.swing.JButton btn8;
     private javax.swing.JButton btn9;
     private javax.swing.JButton btnExit;
+    private javax.swing.JButton btnHome;
     private javax.swing.JButton btnReset;
+    private javax.swing.JButton histbtn;
     private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
     private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel27;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JLabel playerO;
     private javax.swing.JLabel playerX;
+    private javax.swing.JButton recbtn;
     private javax.swing.JPanel twoplayer_mode;
     // End of variables declaration//GEN-END:variables
 
