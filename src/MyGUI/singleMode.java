@@ -48,6 +48,7 @@ public class singleMode extends javax.swing.JFrame {
         jButton28 = new javax.swing.JButton();
         jButton24 = new javax.swing.JButton();
         jLabel21 = new javax.swing.JLabel();
+        histbtn = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -269,6 +270,16 @@ public class singleMode extends javax.swing.JFrame {
                 .addGap(0, 36, Short.MAX_VALUE))
         );
 
+        histbtn.setBackground(new java.awt.Color(0, 51, 51));
+        histbtn.setFont(new java.awt.Font("Tempus Sans ITC", 1, 14)); // NOI18N
+        histbtn.setForeground(new java.awt.Color(255, 102, 102));
+        histbtn.setText("History");
+        histbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                histbtnActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout twoplayer_modeLayout = new javax.swing.GroupLayout(twoplayer_mode);
         twoplayer_mode.setLayout(twoplayer_modeLayout);
         twoplayer_modeLayout.setHorizontalGroup(
@@ -277,16 +288,21 @@ public class singleMode extends javax.swing.JFrame {
                 .addGroup(twoplayer_modeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(twoplayer_modeLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, twoplayer_modeLayout.createSequentialGroup()
-                        .addContainerGap(45, Short.MAX_VALUE)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(42, 42, 42)))
+                        .addComponent(jLabel22, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(twoplayer_modeLayout.createSequentialGroup()
+                        .addGap(35, 35, 35)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(twoplayer_modeLayout.createSequentialGroup()
+                        .addGap(146, 146, 146)
+                        .addComponent(histbtn, javax.swing.GroupLayout.PREFERRED_SIZE, 134, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 43, Short.MAX_VALUE)
                 .addGroup(twoplayer_modeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel27, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, twoplayer_modeLayout.createSequentialGroup()
+                        .addComponent(jLabel27, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap())
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, twoplayer_modeLayout.createSequentialGroup()
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(19, 19, 19))))
         );
         twoplayer_modeLayout.setVerticalGroup(
             twoplayer_modeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -297,12 +313,14 @@ public class singleMode extends javax.swing.JFrame {
                     .addComponent(jLabel27))
                 .addGroup(twoplayer_modeLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(twoplayer_modeLayout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(51, 51, 51)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(histbtn, javax.swing.GroupLayout.DEFAULT_SIZE, 35, Short.MAX_VALUE))
                     .addGroup(twoplayer_modeLayout.createSequentialGroup()
-                        .addGap(48, 48, 48)
-                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(17, Short.MAX_VALUE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(14, 14, 14))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -357,6 +375,11 @@ public class singleMode extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton24ActionPerformed
 
+    private void histbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_histbtnActionPerformed
+        new GameRecorded().setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_histbtnActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -393,6 +416,7 @@ public class singleMode extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton histbtn;
     private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton21;
     private javax.swing.JButton jButton22;
