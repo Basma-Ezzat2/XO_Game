@@ -42,7 +42,7 @@ public class Winner extends javax.swing.JFrame {
     private void createScene(){
         Platform.runLater(new Runnable(){
             public void run (){
-                File file=new File("C:\\Users\\user\\OneDrive\\Desktop\\winner.mp4");
+                File file=new File("winner.mp4");
                 MediaPlayer oracleVid =new MediaPlayer(new Media(file.toURI().toString()));
                 
                 jfxPanel.setScene(new Scene (new Group(new MediaView(oracleVid))));
@@ -70,45 +70,48 @@ public class Winner extends javax.swing.JFrame {
         Winner_video = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel15 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
         jButton19 = new javax.swing.JButton();
+        btnHome = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         Winner_video.setBackground(new java.awt.Color(0, 102, 102));
         Winner_video.setPreferredSize(new java.awt.Dimension(762, 496));
 
+        jPanel1.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel1.setPreferredSize(new java.awt.Dimension(0, 277));
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 559, Short.MAX_VALUE)
+            .addGap(0, 661, Short.MAX_VALUE)
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 253, Short.MAX_VALUE)
+            .addGap(0, 505, Short.MAX_VALUE)
         );
 
         jLabel15.setFont(new java.awt.Font("Tempus Sans ITC", 1, 36)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(102, 0, 51));
-        jLabel15.setText("YOU WIN THE GAME");
-
-        jButton1.setFont(new java.awt.Font("Tempus Sans ITC", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(255, 153, 153));
-        jButton1.setText("Home");
-        jButton1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
+        jLabel15.setText("YOU WoN THE GAME");
 
         jButton19.setBackground(new java.awt.Color(255, 153, 153));
         jButton19.setFont(new java.awt.Font("Tempus Sans ITC", 1, 24)); // NOI18N
-        jButton19.setText("Play again");
+        jButton19.setText("Watch again");
         jButton19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton19ActionPerformed(evt);
+            }
+        });
+
+        btnHome.setBackground(new java.awt.Color(0, 51, 51));
+        btnHome.setFont(new java.awt.Font("Tempus Sans ITC", 1, 18)); // NOI18N
+        btnHome.setForeground(new java.awt.Color(255, 153, 153));
+        btnHome.setText("Back");
+        btnHome.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnHomeActionPerformed(evt);
             }
         });
 
@@ -116,37 +119,34 @@ public class Winner extends javax.swing.JFrame {
         Winner_video.setLayout(Winner_videoLayout);
         Winner_videoLayout.setHorizontalGroup(
             Winner_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(Winner_videoLayout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(Winner_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Winner_videoLayout.createSequentialGroup()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 103, Short.MAX_VALUE)
-                        .addComponent(jLabel15)
-                        .addGap(171, 171, 171))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Winner_videoLayout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jButton19)
-                        .addGap(281, 281, 281))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, Winner_videoLayout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(95, 95, 95))
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(jButton19)
+                .addGap(303, 303, 303))
+            .addGroup(Winner_videoLayout.createSequentialGroup()
+                .addGap(20, 20, 20)
+                .addGroup(Winner_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 661, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(Winner_videoLayout.createSequentialGroup()
+                        .addComponent(btnHome)
+                        .addGap(89, 89, 89)
+                        .addComponent(jLabel15)))
+                .addContainerGap(18, Short.MAX_VALUE))
         );
         Winner_videoLayout.setVerticalGroup(
             Winner_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(Winner_videoLayout.createSequentialGroup()
                 .addGroup(Winner_videoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(Winner_videoLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(Winner_videoLayout.createSequentialGroup()
                         .addGap(24, 24, 24)
-                        .addComponent(jLabel15)))
-                .addGap(33, 33, 33)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
-                .addComponent(jButton19)
+                        .addComponent(jLabel15))
+                    .addGroup(Winner_videoLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnHome)))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 505, Short.MAX_VALUE)
+                .addGap(30, 30, 30)
+                .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
@@ -154,29 +154,28 @@ public class Winner extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 748, Short.MAX_VALUE)
+            .addGap(0, 699, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(Winner_video, javax.swing.GroupLayout.DEFAULT_SIZE, 748, Short.MAX_VALUE))
+                .addComponent(Winner_video, javax.swing.GroupLayout.DEFAULT_SIZE, 699, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 463, Short.MAX_VALUE)
+            .addGap(0, 658, Short.MAX_VALUE)
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(Winner_video, javax.swing.GroupLayout.DEFAULT_SIZE, 463, Short.MAX_VALUE))
+                .addComponent(Winner_video, javax.swing.GroupLayout.DEFAULT_SIZE, 658, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
-
     private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
-        new Modes().setVisible(true);
-        setVisible(false);
-        
+        createScene();
     }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void btnHomeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHomeActionPerformed
+        new twoPlayersMode().setVisible(true);
+        setVisible(false);
+    }//GEN-LAST:event_btnHomeActionPerformed
 
     /**
      * @param args the command line arguments
@@ -215,7 +214,7 @@ public class Winner extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Winner_video;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnHome;
     private javax.swing.JButton jButton19;
     private javax.swing.JLabel jLabel15;
     private javax.swing.JPanel jPanel1;
